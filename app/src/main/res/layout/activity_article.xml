@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Formulaire pour ajouter un article -->
+    <EditText
+        android:id="@+id/editTextLibelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Libellé de l'article"/>
+
+    <EditText
+        android:id="@+id/editTextPU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prix unitaire"/>
+
+    <Button
+        android:id="@+id/buttonAddArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ajouter"/>
+
+    <!-- Table pour afficher les articles -->
+    <TableLayout
+        android:id="@+id/tableLayoutArticles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <!-- Les lignes seront ajoutées dynamiquement ici depuis le code Java -->
+    </TableLayout>
+
+
+</LinearLayout>
